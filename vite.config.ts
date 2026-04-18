@@ -26,6 +26,11 @@ export default defineConfig({
 	worker: {
 		format: 'es'
 	},
+	server: {
+		watch: {
+			ignored: ['**/.venv/**', '**/node_modules/**']
+		}
+	},
 	esbuild: {
 		pure: process.env.ENV === 'dev' ? [] : ['console.log', 'console.debug', 'console.error']
 	}

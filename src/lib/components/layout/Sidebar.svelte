@@ -65,6 +65,7 @@
 	import PinnedModelList from './Sidebar/PinnedModelList.svelte';
 	import Note from '../icons/Note.svelte';
 	import { slide } from 'svelte/transition';
+	import HolmesBriefing from '$lib/components/amplifier/HolmesBriefing.svelte';
 	import HotkeyHint from '../common/HotkeyHint.svelte';
 
 	const BREAKPOINT = 768;
@@ -978,6 +979,10 @@
 
 							<HotkeyHint name="newChat" className=" group-hover:visible invisible" />
 						</a>
+					</div>
+
+					<div class="px-[0.4375rem] flex justify-center text-gray-800 dark:text-gray-200">
+						<HolmesBriefing />
 					</div>
 
 					<div class="px-[0.4375rem] flex justify-center text-gray-800 dark:text-gray-200">
